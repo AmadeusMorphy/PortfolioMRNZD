@@ -311,7 +311,8 @@ button {
     84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
   }
   
-  .menu-icon:checked ~ .nav {
+  .menu-icon:checked ~ .nav,
+  .open .nav {
     animation-play-state: paused;
     top: 50%;
     right: 50%;

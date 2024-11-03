@@ -27,16 +27,18 @@
     </a>
 
   
-      <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
-      <label class="label-icon" for="menu-icon"></label>
-      <nav class="nav"> 		
-        <ul class="">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Book</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Me</a></li>
-        </ul>
-      </nav>
+    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" [(ngModel)]="isMenuOpen"/>
+    <label class="label-icon" for="menu-icon"></label>
+    
+    <nav class="nav" [class.open]="isMenuOpen"> 
+      <ul>
+        <li><a routerLink="/home" (click)="closeMenu()">Home</a></li>
+        <li><a routerLink="/About" (click)="closeMenu()">Book</a></li>
+        <li><a href="#" (click)="closeMenu()">Projects</a></li>
+        <li><a href="#" (click)="closeMenu()">Me</a></li>
+      </ul>
+    </nav>
+    
   </div>
 </div>
 
