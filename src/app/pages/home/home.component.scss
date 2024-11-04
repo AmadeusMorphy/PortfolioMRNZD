@@ -2,7 +2,7 @@
   z-index: -100;
   color: var(--white);
   // background-image: url(https://assets-global.website-files.com/5ff76d2200a9c1216aedeb5d/63a9d9a0c62947af28e48fa6_Luci-blur.jpg);
-  background-image: url(/assets/sillyMe.jpeg);
+  background-image: url("assets/sillyMe.jpeg");
   background-position: 38%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,7 +15,7 @@
 }
 
 .color-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -31,7 +31,7 @@
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -45,19 +45,19 @@
   color: #a3a3a3;
 }
 
-@keyframes revealDiagonal {
-  0% {
-    filter: blur(10px);
-  }
+// @keyframes revealDiagonal {
+//   0% {
+//     filter: blur(10px);
+//   }
 
-  50% {
-    filter: blur(5px);
-  }
+//   50% {
+//     filter: blur(5px);
+//   }
 
-  100% {
-    filter: blur(0);
-  }
-}
+//   100% {
+//     filter: blur(0);
+//   }
+// }
 
 @keyframes fadeIn {
   0% {

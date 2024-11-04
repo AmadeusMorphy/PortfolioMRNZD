@@ -5,7 +5,7 @@ body {
 }
 
 #container {
-    // position: absolute;
+    // position: fixed;
     // margin: auto;
     // width: 100vw;
     // height: 80pt;
@@ -16,12 +16,12 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    filter: url(#threshold) blur(0.6px);
+    filter: url(#threshold);
 }
 
 #text1,
 #text2 {
-    position: absolute;
+    position: fixed;
     height: 60%;
     display: inline-block;
     font-family: funcky_MRNZD;
@@ -32,7 +32,9 @@ body {
 }
 
 @media (max-width: 750px) {
-    #text1, #text2 {
+
+    #text1,
+    #text2 {
         font-size: 4rem;
     }
 }

@@ -13,7 +13,6 @@
   background-color: rgba(128, 0, 128, 0.075);
   padding: 10px;
   border-radius: 20px;
-  backdrop-filter: blur(100px);
   transition: .3s ease-in-out;
 }
 
@@ -84,7 +83,7 @@ button:hover::before {
   background: var(--primary-color);
   top: 50%;
   left: 1.5em;
-  position: absolute;
+  position: fixed;
   transform: translateY(-50%);
   transform-origin: center;
   transition: background 0.3s linear, width 0.3s linear;
@@ -107,7 +106,7 @@ button:hover::before {
   width: 1.5625rem;
   top: -2px;
   left: 0.625rem;
-  position: absolute;
+  position: fixed;
   background: var(--primary-color);
   transition: width 0.5s ease-out, left 0.3s ease-out;
 }
@@ -117,7 +116,7 @@ button:hover::before {
   width: 1.5625rem;
   right: 1.875rem;
   bottom: -2px;
-  position: absolute;
+  position: fixed;
   background: var(--primary-color);
   transition: width 0.5s ease-out, right 0.3s ease-out;
 }
@@ -127,7 +126,7 @@ button:hover::before {
   width: 0.625rem;
   right: 0.625rem;
   bottom: -2px;
-  position: absolute;
+  position: fixed;
   background: #212121;
   transition: width 0.5s ease-out, right 0.3s ease-out;
 }
@@ -188,7 +187,7 @@ button:hover::before {
 
 
 .section-center {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 0;
   display: block;
@@ -203,6 +202,7 @@ button:hover::before {
 .label-icon {
   animation: float 3s ease-in-out infinite;
 }
+
 h1 {
   font-family: funcky_MRNZD;
   font-weight: 800;
@@ -219,7 +219,7 @@ h1 {
 
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked) {
-  position: absolute;
+  position: fixed;
   left: -9999px;
 }
 
@@ -239,7 +239,7 @@ h1 {
 
 .menu-icon:checked+label:before,
 .menu-icon:not(:checked)+label:before {
-  position: absolute;
+  position: fixed;
   content: '';
   display: block;
   width: 30px;
@@ -258,7 +258,7 @@ h1 {
 
 .menu-icon:checked+label:after,
 .menu-icon:not(:checked)+label:after {
-  position: absolute;
+  position: fixed;
   content: '';
   display: block;
   width: 22px;
@@ -317,7 +317,7 @@ h1 {
     transform 250ms 1100ms ease,
     width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1),
     height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    border: 3px solid white;
+  border: 3px solid white;
 }
 
 .doodleMenu {
@@ -360,9 +360,11 @@ h1 {
   0% {
     translate: 0 0;
   }
+
   50% {
     translate: 0 5px 5px;
   }
+
   100% {
     translate: 0 0;
   }
@@ -384,7 +386,7 @@ h1 {
 }
 
 .nav ul {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 0;
   display: block;
@@ -447,7 +449,7 @@ h1 {
 
 .nav ul li a:after {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 50%;
   content: '';
   height: 2vh;
@@ -496,7 +498,7 @@ h1 {
 
 
 // .logo {
-//   position: absolute;
+//   position: fixed;
 //   top: 60px;
 //   left: 50px;
 //   display: block;
@@ -522,6 +524,7 @@ h1 {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -531,6 +534,7 @@ h1 {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }

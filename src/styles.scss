@@ -1,79 +1,93 @@
 @import "primeflex/primeflex.css";
 @import "primeicons/primeicons.css";
+
 :root {
-    --bg-color-dark: #0e001b;
-    --primary-color: #5e099a;
+  --bg-color-dark: #0e001b;
+  --primary-color: #5e099a;
 }
 
 @font-face {
-    font-family: MRNZd_font;
-    src: url(./assets/fonts/PlaywriteGBS-VariableFont_wght.ttf);
+  font-family: MRNZd_font;
+  src: url(./assets/fonts/PlaywriteGBS-VariableFont_wght.ttf);
 }
+
 @font-face {
-    font-family: funcky_MRNZD;
-    src: url(./assets/fonts/ArchitectsDaughter-Regular.ttf);
+  font-family: funcky_MRNZD;
+  src: url(./assets/fonts/ArchitectsDaughter-Regular.ttf);
 }
-html, body {
-    color: #fefeff;
-  }
-  body {
-    margin: 0;
-    background-color: var(--bg-color-dark);
-    font-family: funcky_MRNZD;
-    position: absolute;
-    width: 100%;
-  }
-  canvas {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-  }
-  h1 {
-    font: 2.75em 'Cinzel', serif;
-    font-weight: 400;
-    letter-spacing: 0.35em;
-  }
+
+html,
+body {
+  color: #fefeff;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color-dark);
+  font-family: funcky_MRNZD;
+  position: fixed;
+  width: 100%;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+h1 {
+  font: 2.75em 'Cinzel', serif;
+  font-weight: 400;
+  letter-spacing: 0.35em;
+}
 
 
-  /*********SCROLBAR***********/
-  ::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #1a1a2e; /* Dark background for a cozy feel */
-    border-radius: 10px;
-    margin: 5px; /* Adds spacing around the scrollbar */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: rgb(40, 0, 77); /* Dark purple scrollbar thumb */
-    border-radius: 10px;
-    border: 3px solid #1a1a2e; /* Creates space around the thumb */
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #1d0050; /* Lighter purple on hover for interactivity */
-  }
-  
-  /* Firefox Scrollbar */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: rgb(62, 0, 121)  #1a1a2e; /* Thumb color, Track color */
-  }
+/*********SCROLBAR***********/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+  /* Dark background for a cozy feel */
+  border-radius: 10px;
+  margin: 5px;
+  /* Adds spacing around the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(40, 0, 77);
+  /* Dark purple scrollbar thumb */
+  border-radius: 10px;
+  border: 3px solid #1a1a2e;
+  /* Creates space around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1d0050;
+  /* Lighter purple on hover for interactivity */
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(62, 0, 121) #1a1a2e;
+  /* Thumb color, Track color */
+}
 
 
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 103%;
-    background: rgba(0, 0, 0, 0.76); 
-    pointer-events: none; 
-    z-index: 1;
-  }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 103%;
+  background: rgba(0, 0, 0, 0.76);
+  pointer-events: none;
+  z-index: 1;
+}
+
 //   [class^="letter"] {
 //     -webkit-transition: opacity 3s ease;
 //     -moz-transition: opacity 3s ease;
@@ -127,22 +141,25 @@ html, body {
 //   .letter-15 {
 //     transition-delay: 3.2s;
 //   }
-  h1 {
-    visibility: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-  
-  }
-  h1.transition-in {
-    visibility: visible;
-  }
-  h1 [class^="letter"] {
-    opacity: 0;
-  }
-  h1.transition-in [class^="letter"] {
-    opacity: 1;
-  }
+h1 {
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+
+}
+
+h1.transition-in {
+  visibility: visible;
+}
+
+h1 [class^="letter"] {
+  opacity: 0;
+}
+
+h1.transition-in [class^="letter"] {
+  opacity: 1;
+}

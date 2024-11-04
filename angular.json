@@ -34,8 +34,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/smoke.js",
-              "src/assets/textAnim1.js"
+              "src/assets/smoke.js"
             ]
           },
           "configurations": {
