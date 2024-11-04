@@ -41,6 +41,9 @@
   z-index: -1;
 }
 
+.Name {
+  color: #a3a3a3;
+}
 
 @keyframes revealDiagonal {
   0% {
@@ -144,6 +147,7 @@ body {
 .small {
   font-size: 30px;
   margin-top: 0;
+  color: #a3a3a3;
 }
 
 .smaller {
