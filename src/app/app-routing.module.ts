@@ -6,6 +6,7 @@ import { TextAnim1Component } from './pages/widgets/text-anim1/text-anim1.compon
 import { BackgroundComponent } from './pages/background/background.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { BookComponent } from './pages/book/book.component';
+import { SocialComponent } from './pages/widgets/social/social.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'projects', component: ProjectsComponent},
   {path: 'book', component: BookComponent},
   {path: 'about', component: AboutComponent},
-  {path: 'text', component: TextAnim1Component}
+  {path: 'text', component: TextAnim1Component},
+  {path: 'social', component: SocialComponent}
 
 ];
 
