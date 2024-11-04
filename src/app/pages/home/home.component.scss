@@ -18,7 +18,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: blue;
+    background-color: rgb(34, 34, 34);
     opacity: 0;
     transition: opacity 0.3s ease; // Smooth fade transition for the overlay
     z-index: -1;
@@ -47,6 +47,7 @@
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 70px;
     padding-right: 0;
     display: flex;
     z-index: 2;
@@ -68,3 +69,55 @@
   width: 100%;
   height: 100%;
 }
+
+
+
+/*******WIGGLE TEXT*********/
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+
+body {
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 100px;
+  line-height: 100vh;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+@keyframes squiggly-anim {
+  0% { filter: url('#squiggly-0'); }
+  25% { filter: url('#squiggly-1'); }
+  50% { filter: url('#squiggly-2'); }
+  75% { filter: url('#squiggly-3'); }
+  100% { filter: url('#squiggly-4'); }
+}
+
+.squiggly {
+  animation: squiggly-anim 0.34s linear infinite;
+}
+
+.test {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  outline: none;
+  text-align: center;
+  line-height: 1;
+  animation: squiggly-anim 0.34s linear infinite;
+  font-size: 5rem;
+}
+
+.small {
+  font-size: 30px ;
+  margin-top: 0;
+}
+
+.smaller {
+  font-size: 0.4em;
+}
+
+
+/*********TEXT PUDDLE ANIMATION*********/
+
+
