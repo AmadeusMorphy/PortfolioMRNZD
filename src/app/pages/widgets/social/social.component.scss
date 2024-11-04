@@ -175,8 +175,23 @@ footer .demo {
     opacity: 1;
     transition: 0.8s;
   }
+
+  image {
+    animation: float 5s ease-in-out infinite;
+  }
   
 
+  @keyframes float {
+    0% {
+      translate: 0 0;
+    }
+    50% {
+      translate: 0 5px;
+    }
+    100% {
+      translate: 0 0;
+    }
+  }
 
   @keyframes border-transform {
     0%,
