@@ -73,6 +73,16 @@ footer .demo {
     border: none;
   }
 
+  .insta {
+    animation: border-transform 4s ease-in-out infinite;
+  }
+  .face {
+    animation: border-transform 5s ease-in-out infinite;
+  }
+  .git {
+    animation: border-transform 6s ease-in-out infinite;
+  }
+
   .sub-circle i {
     display: flex;
     justify-content: center;
