@@ -1,6 +1,6 @@
 <div class="header flex justify-content-between align-items-center pr-7 pl-4 pt-5">
   <div class="logo">
-<app-social></app-social>
+    <app-social [ngClass]="isMenuOpen ? 'hideSocial' : 'showSocial'"></app-social>
   </div>
   <div class="items flex gap-8">
     <button routerLink="/home">
@@ -29,19 +29,20 @@
     </a>
 
 
-    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" [(ngModel)]="isMenuOpen" />
-    <label class="label-icon" for="menu-icon"></label>
+    <div class="doodleMenu">
+      <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" [(ngModel)]="isMenuOpen" />
+      <label class="label-icon" for="menu-icon"></label>
 
-    <nav class="nav" [class.open]="isMenuOpen">
-      <ul>
-        <li><a routerLink="/home" (click)="closeMenu()">Home</a></li>
-        <li><a routerLink="/background" (click)="closeMenu()">Background</a></li>
-        <li><a routerLink="/projects" (click)="closeMenu()">Projects</a></li>
-        <li><a routerLink="/book" (click)="closeMenu()">Book</a></li>
-        <li><a routerLink="/me" (click)="closeMenu()">Me</a></li>
-      </ul>
-    </nav>
-
+      <nav class="nav" [class.open]="isMenuOpen">
+        <ul>
+          <li><a routerLink="/home" (click)="closeMenu()">Home</a></li>
+          <li><a routerLink="/background" (click)="closeMenu()">Background</a></li>
+          <li><a routerLink="/projects" (click)="closeMenu()">Projects</a></li>
+          <li><a routerLink="/book" (click)="closeMenu()">Book</a></li>
+          <li><a routerLink="/me" (click)="closeMenu()">Me</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </div>
 
