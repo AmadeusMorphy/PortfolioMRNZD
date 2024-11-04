@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BackgroundComponent } from './pages/background/background.component';
 import { BookComponent } from './pages/book/book.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { BookTitleComponent } from './pages/widgets/book-title/book-title.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     TextAnim1Component,
     BackgroundComponent,
     BookComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    BookTitleComponent
   ],
   imports: [
     BrowserModule,

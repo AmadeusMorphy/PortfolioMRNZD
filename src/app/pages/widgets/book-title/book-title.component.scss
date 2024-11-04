@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  :host {
+text-align: center;
+  }
+
+  .line {
+    width: 100vw;
+  }
+  .left, .right {
+    width: 50vw;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .left {
+    color: #13187b;
+    transform: skew(0deg, -15deg);
+  }
+  .right {
+    color: #a05c95;
+    transform: skew(0deg, 15deg);
+  }
+  .left .content, .right .content {
+    width: 100vw;
+    text-align: center;
+  }
+  .right .content {
+    transform: translate(-50vw);
+  }
+  span {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: .8;
+    transition: ease-out .6s;
+  }
+  

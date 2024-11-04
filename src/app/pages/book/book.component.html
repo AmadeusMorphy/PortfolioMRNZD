@@ -1,4 +1,20 @@
-<div class="book-container">
+
+<div class="title flex justify-content-center align-items-center w-full">
+
+  <app-book-title></app-book-title>
+</div>
+
+<div class="container justify-content-between gap-1 w-full">
+
+
+
+  <div class="info">
+    <img src="/assets/bgtexttest.png" style="width: 100%;">
+  </div>
+
+
+
+  <div class="book-container">
     <div class="book">
       <div class="cover" style="background-image: url('/assets/book.png');"></div>
       <div *ngFor="let page of pages; let i = index" class="page">
@@ -11,7 +27,11 @@
           </div>
         </div>
       </div>
-      <div class="back-cover"></div>
+      <div class="back-cover flex justify-content-center align-items-center">
+        To My Mom...<br>
+        The Flower of My Existence...
+      </div>
       <div class="spine"></div>
     </div>
   </div>
+</div>
