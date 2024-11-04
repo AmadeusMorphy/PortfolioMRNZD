@@ -1,75 +1,94 @@
-.luci-background {
-    z-index: -100;
-    color: var(--white);
-    background-image: url(https://assets-global.website-files.com/5ff76d2200a9c1216aedeb5d/63a9d9a0c62947af28e48fa6_Luci-blur.jpg);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.NZD-background {
+  z-index: -100;
+  color: var(--white);
+  // background-image: url(https://assets-global.website-files.com/5ff76d2200a9c1216aedeb5d/63a9d9a0c62947af28e48fa6_Luci-blur.jpg);
+  background-image: url(/assets/sillyMe.jpeg);
+  background-position: 38%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(34, 34, 34);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.color-overlay.active {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.76);
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+@keyframes revealDiagonal {
+  0% {
+    filter: blur(10px);
   }
-  
-  .color-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(34, 34, 34);
+
+  50% {
+    filter: blur(5px);
+  }
+
+  100% {
+    filter: blur(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
     opacity: 0;
-    transition: opacity 0.3s ease; // Smooth fade transition for the overlay
-    z-index: -1;
   }
-  
-  .color-overlay.active {
+
+  100% {
     opacity: 1;
   }
-  
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.76); 
-    pointer-events: none; 
-    z-index: -1;
-  }
-  
+}
+
 .home-intro {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 70%;
-    // height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 58px;
-    padding-right: 0;
-    display: flex;
-    z-index: 2;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70%;
+  animation: revealDiagonal 1s ease-out forwards;
+  animation: fadeIn 2s ease-in-out;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 58px;
+  padding-right: 0;
+  display: flex;
+  z-index: 2;
 }
 
 .homeStuff {
-    background: black;
+  background: black;
 }
 
 .homeStuff {
   margin: 100px 15% 100px 15%;
 }
-.cardImg {
-  width: 400px;
-  height: 500px;
-}
-
-.cardImg img {
-  width: 100%;
-  height: 100%;
-}
-
 
 
 /*******WIGGLE TEXT*********/
@@ -86,11 +105,25 @@ body {
 }
 
 @keyframes squiggly-anim {
-  0% { filter: url('#squiggly-0'); }
-  25% { filter: url('#squiggly-1'); }
-  50% { filter: url('#squiggly-2'); }
-  75% { filter: url('#squiggly-3'); }
-  100% { filter: url('#squiggly-4'); }
+  0% {
+    filter: url('#squiggly-0');
+  }
+
+  25% {
+    filter: url('#squiggly-1');
+  }
+
+  50% {
+    filter: url('#squiggly-2');
+  }
+
+  75% {
+    filter: url('#squiggly-3');
+  }
+
+  100% {
+    filter: url('#squiggly-4');
+  }
 }
 
 .squiggly {
@@ -109,15 +142,10 @@ body {
 }
 
 .small {
-  font-size: 30px ;
+  font-size: 30px;
   margin-top: 0;
 }
 
 .smaller {
   font-size: 0.4em;
 }
-
-
-/*********TEXT PUDDLE ANIMATION*********/
-
-

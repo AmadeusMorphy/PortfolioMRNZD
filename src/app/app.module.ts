@@ -8,19 +8,27 @@ import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './pages/about/about.component';
 import { TextAnim1Component } from './pages/widgets/text-anim1/text-anim1.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BackgroundComponent } from './pages/background/background.component';
+import { BookComponent } from './pages/book/book.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    TextAnim1Component
+    TextAnim1Component,
+    BackgroundComponent,
+    BookComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterOutlet,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

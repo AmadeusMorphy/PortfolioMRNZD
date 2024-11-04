@@ -1,0 +1,17 @@
+<div class="book-container">
+    <div class="book">
+      <div class="cover" style="background-image: url('/assets/book.png');"></div>
+      <div *ngFor="let page of pages; let i = index" class="page">
+        <div class="page-content">
+          <div class="page-front">
+            <p>{{ page }}</p>
+          </div>
+          <div class="page-back">
+            <p>{{ page }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="back-cover"></div>
+      <div class="spine"></div>
+    </div>
+  </div>

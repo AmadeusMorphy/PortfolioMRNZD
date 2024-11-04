@@ -1,11 +1,12 @@
 import { AfterViewInit, Component, ElementRef } from '@angular/core';
 
 @Component({
-  selector: 'app-text-anim1',
+  selector: 'goofy-text-anim1',
   templateUrl: './text-anim1.component.html',
   styleUrls: ['./text-anim1.component.scss']
 })
 export class TextAnim1Component implements AfterViewInit {
+
   private texts = [
     "Frontend",
     "Developer",
