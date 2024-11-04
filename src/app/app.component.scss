@@ -200,8 +200,10 @@ button:hover::before {
 }
 
 .label-icon {
-  animation: float 3s ease-in-out infinite;
+  will-change: transform;
+  animation: float 1.5s ease-in-out infinite;
 }
+
 
 h1 {
   font-family: funcky_MRNZD;
